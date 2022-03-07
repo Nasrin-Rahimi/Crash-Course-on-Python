@@ -3,6 +3,9 @@
 
 # hint:  there are 3600 seconds in an hour and 60 seconds in a minute.
 
+from curses import KEY_MARK
+
+
 def print_seconds(hours, minutes, seconds):
     print((hours*3600) + (minutes*60) + seconds)
 
@@ -16,3 +19,6 @@ def convert_seconds(seconds):
 
 hours, minutes, seconds = convert_seconds(5000)
 print(hours, minutes, seconds) #1 23 20
+
+
+
